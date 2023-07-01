@@ -32,7 +32,7 @@ const Friend = ({ friendData }) => {
       )}
       {friendData.balance === 0 && <p>You and {friendData.name} are even</p>}
 
-      <button className="button">Select</button>
+      <Button>Select</Button>
     </li>
   );
 };
@@ -46,9 +46,13 @@ const FormAddFriend = () => {
       <label>🎇 Image URL</label>
       <input type="text" />
 
-      <button className="button">Add</button>
+      <Button>Add</Button>
     </form>
   );
+};
+
+const Button = ({ children }) => {
+  return <button className="button">{children}</button>;
 };
 
 const App = () => {
