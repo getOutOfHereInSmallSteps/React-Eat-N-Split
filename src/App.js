@@ -60,6 +60,7 @@ const App = () => {
         <FormSplitBill
           selectedFriend={selectedFriend}
           onSplitBill={splitBillHandler}
+          key={selectedFriend.id}
         />
       )}
     </div>
